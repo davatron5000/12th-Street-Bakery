@@ -1,0 +1,291 @@
+/* Welcome to Compass.
+ * In this file you should write your main styles. (or centralize your imports)
+ * Import this file using the following HTML or equivalent:
+ * <link href="/stylesheets/screen.css" media="screen, projection" rel="stylesheet" type="text/css" /> */
+/* line 17, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed,
+figure, figcaption, footer, header, hgroup,
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font: inherit;
+  font-size: 100%;
+  vertical-align: baseline;
+}
+
+/* line 22, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+html {
+  line-height: 1;
+}
+
+/* line 24, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+ol, ul {
+  list-style: none;
+}
+
+/* line 26, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+/* line 28, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+caption, th, td {
+  text-align: left;
+  font-weight: normal;
+  vertical-align: middle;
+}
+
+/* line 30, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q, blockquote {
+  quotes: none;
+}
+/* line 103, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+q:before, q:after, blockquote:before, blockquote:after {
+  content: "";
+  content: none;
+}
+
+/* line 32, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+a img {
+  border: none;
+}
+
+/* line 116, ../../../../.rvm/gems/ruby-1.9.3-head/gems/compass-0.12.2/frameworks/compass/stylesheets/compass/reset/_utilities.scss */
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section, summary {
+  display: block;
+}
+
+/* Responsive Resets
+-------------------------------------------------------------- */
+@-o-viewport {
+  width: device-width;
+}
+
+@-ms-viewport {
+  width: device-width;
+}
+
+@viewport {
+  width: device-width;
+}
+
+/* line 23, ../sass/screen.scss */
+html {
+  overflow-y: auto;
+}
+
+/* line 30, ../sass/screen.scss */
+img,
+audio,
+video,
+canvas {
+  max-width: 100%;
+}
+
+/* line 34, ../sass/screen.scss */
+.container {
+  width: 92%;
+  margin: 0 auto;
+  max-width: 800px;
+}
+
+@media (min-width: 40em) {
+  /* line 41, ../sass/screen.scss */
+  .grid-half {
+    width: 50%;
+    float: left;
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+  /* line 46, ../sass/screen.scss */
+  .grid-half:nth-of-type(1) {
+    padding-right: 2em;
+  }
+  /* line 50, ../sass/screen.scss */
+  .grid-half:nth-of-type(2) {
+    padding-left: 2em;
+  }
+}
+/* Micro Clearfix - http://nicolasgallagher.com/micro-clearfix-hack/
+For best results, use your favorite clearfix here.
+-------------------------------------------------------------- */
+/* line 59, ../sass/screen.scss */
+.cf:before, .cf:after {
+  content: "";
+  display: table;
+}
+
+/* line 60, ../sass/screen.scss */
+.cf:after {
+  clear: both;
+}
+
+/* line 61, ../sass/screen.scss */
+.cf {
+  zoom: 1;
+}
+
+/* For IE 6/7 (trigger hasLayout) */
+/* Site Styles */
+/* line 65, ../sass/screen.scss */
+body {
+  background: #FFF;
+  font: 100%/1.5 monospace;
+}
+
+/* line 70, ../sass/screen.scss */
+.site-header {
+  padding: 1em 0 0;
+  background-image: url(../images/brickwall.png);
+  background: -webkit-gradient(linear, 50% 0%, 50% 100%, color-stop(0%, rgba(255, 255, 255, 0)), color-stop(100%, #ffffff)), url(../images/brickwall.png);
+  background: -webkit-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff), url(../images/brickwall.png);
+  background: -moz-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff), url(../images/brickwall.png);
+  background: -o-linear-gradient(top, rgba(255, 255, 255, 0), #ffffff), url(../images/brickwall.png);
+  background: linear-gradient(top, rgba(255, 255, 255, 0), #ffffff), url(../images/brickwall.png);
+  text-align: center;
+}
+/* line 83, ../sass/screen.scss */
+.site-header img {
+  width: 4.5em;
+  height: auto;
+}
+
+/* line 89, ../sass/screen.scss */
+.price {
+  font-weight: bold;
+  float: right;
+  clear: right;
+  margin-left: 2em;
+}
+
+/* line 96, ../sass/screen.scss */
+.page-section {
+  margin-bottom: 2em;
+}
+
+/* line 100, ../sass/screen.scss */
+.sub-section {
+  margin-bottom: 2em;
+}
+
+/* line 120, ../sass/screen.scss */
+h1, h2 {
+  font-family: "IM Fell English SC", serif;
+}
+
+/* line 124, ../sass/screen.scss */
+h1 {
+  font-size: 1.5em;
+  text-transform: uppercase;
+  text-align: center;
+  margin-bottom: 0.5em;
+}
+
+/* line 131, ../sass/screen.scss */
+h2 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+/* line 136, ../sass/screen.scss */
+a {
+  color: #EC5E5E;
+}
+/* line 138, ../sass/screen.scss */
+a:hover {
+  color: #e94747;
+}
+
+/* line 143, ../sass/screen.scss */
+.site-footer {
+  background: rgba(0, 0, 0, 0.025);
+  padding: 2em 0;
+}
+
+/* line 149, ../sass/screen.scss */
+.hours-list li,
+.menu-list li {
+  border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+  padding: 0.25em 0;
+  overflow: hidden;
+}
+
+/* line 155, ../sass/screen.scss */
+.hours-list li {
+  border-bottom: 0;
+}
+
+/* line 159, ../sass/screen.scss */
+address {
+  line-height: 2em;
+}
+
+@media screen and (min-width: 40em) {
+  /* line 164, ../sass/screen.scss */
+  h1 {
+    font-size: 2.5em;
+  }
+
+  /* line 167, ../sass/screen.scss */
+  h2 {
+    font-size: 2.2em;
+  }
+
+  /* line 186, ../sass/screen.scss */
+  .menu-section:nth-of-type(1) .menu-list,
+  .menu-section:nth-of-type(2) .menu-list {
+    -webkit-column-count: 2;
+    -webkit-column-gap: 4em;
+  }
+
+  /* line 191, ../sass/screen.scss */
+  .sub-section {
+    margin-bottom: 4em;
+  }
+
+  /* line 195, ../sass/screen.scss */
+  .site-footer {
+    margin-top: 4em;
+  }
+}
+/* line 200, ../sass/screen.scss */
+.about {
+  line-height: 2em;
+}
+/* line 203, ../sass/screen.scss */
+.about p, .about ul {
+  margin-bottom: 2em;
+}
+
+@media screen and (min-width: 600px) {
+  /* line 209, ../sass/screen.scss */
+  .about {
+    display: table-cell;
+    vertical-align: top;
+    padding-right: 5%;
+  }
+
+  /* line 214, ../sass/screen.scss */
+  .fb {
+    display: table-cell;
+    vertical-align: top;
+  }
+
+  /* line 218, ../sass/screen.scss */
+  .site-footer {
+    padding: 4em 0;
+  }
+}
